@@ -2,7 +2,7 @@ FROM max13fr/minecraft
 
 ENV MINECRAFT_VERSION 1.7.10
 ENV FTB_INFINITY_URL http://ftb.cursecdn.com/FTB2/modpacks/FTBInfinity/2_4_1/FTBInfinityServer.zip
-ENV MINECRAFT_OPTS -server -Xms2048m -Xmx4096m -XX:MaxPermSize=256m -XX:+UseParNewGC -XX:+UseConcMarkSweepGC
+ENV MINECRAFT_OPTS -server -Xms2048m -Xmx4096m -XX:MaxPermSize=256m -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -Dfml.queryResult=confirm
 ENV MINECRAFT_STARTUP_JAR FTBServer-$MINECRAFT_VERSION-*.jar
 ENV LAUNCHWRAPPER net/minecraft/launchwrapper/1.12/launchwrapper-1.12.jar
 
